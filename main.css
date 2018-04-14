@@ -204,6 +204,21 @@ section {
     margin:auto;
 }
 
+.content-gallery.one-third {
+    width:33%;
+    outline:1px solid;
+    margin:0;
+}
+
+.content-gallery.two-third {
+    width:67%;
+}
+
+.content-gallery.two-third .gallery-card {
+    width: calc(77% / 3);
+    max-width:200px;
+}
+
 .gallery-card {
     display:flex;
     flex-direction: column;
