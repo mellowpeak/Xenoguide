@@ -118,10 +118,7 @@ nav ul li a {
 }
 
 main {
-    flex: 1;
-    display:block;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex:1;
     width:100%;
     min-width:1000px;
     margin:0;
@@ -130,9 +127,8 @@ main {
 
 .landing-content {
     display:flex;
-    flex-direction:row;
     flex-wrap:wrap;
-    justify-content: center;
+    justify-content: flex-start;
     width:60%;
     min-width:1000px;
     margin:15px auto;
@@ -162,9 +158,9 @@ main {
 .content-wrapper {
     display:flex;
     flex-wrap:wrap;
-    justify-content: left;
     width:calc(100% - 228px);
     margin:80px auto 50px;
+    outline:1px solid;
 }
 
 .content-wrapper h3 {
@@ -191,18 +187,6 @@ main {
     line-height:1.5em;
 }
 
-.content-wrapper.justify-left {
-    justify-content: flex-end;
-    align-items: flex-end;
-}
-
-.content-wrapper.justify-left h3 {
-    width:100%;
-    text-align:left;
-    margin:0 0 -2.25em 0;
-    padding:0.5em 0;
-}
-
 .gallery-title {
     width:100%;
     margin:0 114px;
@@ -213,21 +197,12 @@ main {
     border-top:1px solid #ffcdd2;
 }
 
-.image-wrapper.justify-right {
-    width:50%;
-}
-
-.content-wrapper.justify-left img {
-    float:right;
-    height:400px;
-}
-
 .gallery-card {
     display:flex;
     flex-direction: column;
-    width: calc(100% / 6);
+    width: calc(88% / 6);
     max-width:200px;
-    margin:0 auto 40px;
+    margin:0 1% 30px;
     padding:0;
     border-radius:3px;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
@@ -246,15 +221,16 @@ main {
     background-color:#eceff1;
 }
 
-.gallery {
+.image-wrapper {
     display:flex;
-    flex-wrap:wrap;
-    align-items: flex-start;
-    max-width:500px;
-    margin:30px;
-    padding:0;
-    border-radius:2px;    
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    flex-direction: row-reverse;
+    align-items: flex-end;
+}
+
+.image-wrapper img {
+    width:33.33%;
+    margin:-5.5em 0 0 0;
+    outline:1px solid;
 }
 
 footer {
