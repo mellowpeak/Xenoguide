@@ -160,7 +160,6 @@ main {
     flex-wrap:wrap;
     width:calc(100% - 228px);
     margin:80px auto 50px;
-    outline:1px solid;
 }
 
 .content-wrapper h3 {
